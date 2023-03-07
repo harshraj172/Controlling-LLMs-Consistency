@@ -1,1 +1,1 @@
-# Controlling-LLM-s-Consistency
+# Controlling-LLMs-Consistency
