@@ -14,7 +14,6 @@ In the previous work we were using a mix of several semantic and lexical sentenc
 Now we tried to improve the scoring function using LLMs as the consistency scorer itself, with some chain of prompts. The prompt (see [notebook](https://github.com/harshraj172/Controlling-LLMs-Consistency/blob/main/adv_pp-rule_based.ipynb)) consistes of 2 templates.
 
 1. "template_eval_step1" (see 4th cell [notebook](https://github.com/harshraj172/Controlling-LLMs-Consistency/blob/main/adv_pp-rule_based.ipynb)) - designed to extract the facts & figures of an answer. To compare the consistencies of the answers generated from both the original and the paraphrased question we compare the basic content. The template gives some few shot examples on how to get the basic content of an answer based on the question.
-
 In the template:
 ```
 Context - Answer (from paraphrased question / original question)
@@ -26,7 +25,6 @@ Answer - Basic Content (asked to generate)
 Using the prompt, retrive the main content of the answers for both the original and the paraphrased versions of the questions.
 
 2. "template_eval_step2" (see 5th cell [notebook](https://github.com/harshraj172/Controlling-LLMs-Consistency/blob/main/adv_pp-rule_based.ipynb)) - designed to compare the retrieved facts (Basic Content) for the both the type of answers. 
-
 In the template:
 ```
 Question - original question
