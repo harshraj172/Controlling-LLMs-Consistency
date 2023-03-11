@@ -36,4 +36,4 @@ Answer2 - Basic Content (of paraphrased answer)
 Via few-shot prompting the comparison yields "yes" if the two texts talk the same thing (are consistent) else "no" through which we decide the consistency score of 1 and 0 respectively.
 
 
-- Using the above methods of paraphrasing and consistency scoring, we constructed a dataset consisting of the question, paraphrased question, type of paraphrasing rule used, original output (from question), paraphrased output (from paraphrased question) and consistecy score. 
+[Dataset](https://github.com/harshraj172/Controlling-LLMs-Consistency/blob/main/data/truthfulQA_pp_conscore.csv) - Using the above methods of paraphrasing and consistency scoring, we constructed a dataset consisting of the question, paraphrased question, type of paraphrasing rule used, original output (from question), paraphrased output (from paraphrased question) and consistecy score. 
